@@ -101,3 +101,28 @@ end to end testing
 - In event-driven system
   - multiple instance of a service on separate machines
     - in memory lock is impossible
+
+## Problems of Monolith
+
+### Coupling and Lack of Boundaries
+ - over time the boundaries of each domain gets compromised
+
+### Team Autonomy
+- as team grows it gets harder to work on a single application
+- deployment needs coordination between the different teams- feature merges also become problematic
+- overhead of communication, quality assurance and coordination increases
+
+### Release Cycle
+- the entire application has to be validated and tested even with smaller changes
+
+### Scaling
+- extensive changes have to be made in monolith to be able to deal with concurrent requests
+- vertical scaling (adding CPUs and RAMs) is always an option but it gets costly
+- mostly the database is also monolithic which is hard to scale with high data volumes
+- if a business needs geo-distribution to reduce latency, monolith database limits that
+- most of the time only a section of the monolith needs scaling but we have to scale the whole application
+
+### Outdated Technology Stack
+- some technologies go out of support, it an be a deal-breaker for new technologies
+- technical debt and no longer needed functionalities can be challenging to remove
+- event driven services are highly de-coupled, implementing an existing service in a new technology is simplified
