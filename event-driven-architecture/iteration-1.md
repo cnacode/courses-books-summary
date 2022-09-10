@@ -126,3 +126,6 @@ end to end testing
 - some technologies go out of support, it an be a deal-breaker for new technologies
 - technical debt and no longer needed functionalities can be challenging to remove
 - event driven services are highly de-coupled, implementing an existing service in a new technology is simplified
+
+### Reliability
+- any change can bring the whole application down
